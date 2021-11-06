@@ -1,4 +1,4 @@
-name: wheel_of_workouts_flutter
+name: wheel_of_workouts
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -28,6 +28,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  provider: ^6.0.1
+  enum_to_string: ^2.0.1
+  select_form_field: ^2.2.0
 
 dev_dependencies:
   flutter_test:
