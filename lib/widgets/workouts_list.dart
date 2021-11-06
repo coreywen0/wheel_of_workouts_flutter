@@ -45,10 +45,14 @@ class WorkoutsList extends StatelessWidget {
             return WorkoutItem(name: workout.name, category: workout.category);
           },
           body: ListTile(
-            title: Text('expanded'),
-            subtitle:
-                const Text('To delete this panel, tap the trash can icon'),
-            trailing: const Icon(Icons.delete),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Primary: ${workout.primary.toFormattedString()}'),
+                Text('Secondary: ${workout.secondary.toFormattedString()}'),
+              ],
+            ),
+            subtitle: Text('Sets/Reps: ${workout.setReps}'),
             onTap: () {},
           ),
         );

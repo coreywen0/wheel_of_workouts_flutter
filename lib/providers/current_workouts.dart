@@ -12,7 +12,7 @@ class CurrentWorkoutsProvider with ChangeNotifier {
       category: WorkoutCategory.upperBody,
       primary: MuscleGroup.pecs,
       secondary: MuscleGroup.quads,
-      setReps: 'set reps',
+      setReps: '3 x F',
     ),
     Workout(
       id: '2',
@@ -20,7 +20,7 @@ class CurrentWorkoutsProvider with ChangeNotifier {
       category: WorkoutCategory.upperBody,
       primary: MuscleGroup.pecs,
       secondary: MuscleGroup.quads,
-      setReps: 'set reps',
+      setReps: '3 x F',
     ),
   ];
 

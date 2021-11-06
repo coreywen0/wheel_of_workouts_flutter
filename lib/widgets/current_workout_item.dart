@@ -1,4 +1,3 @@
-import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 import 'package:wheel_of_workouts/models/muscle_groups.dart';
 import 'package:wheel_of_workouts/models/workout.dart';
@@ -47,6 +46,7 @@ class _CurrentWorkoutItemState extends State<CurrentWorkoutItem> {
           Text(workout.category.toFormattedString()),
           Text(workout.primary.toFormattedString()),
           Text(workout.secondary.toFormattedString()),
+          Text('Set/Reps: ${workout.setReps}')
         ],
       ),
     );

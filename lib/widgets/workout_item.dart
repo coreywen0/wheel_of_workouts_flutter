@@ -22,7 +22,7 @@ class WorkoutItem extends StatelessWidget {
       child: ListTile(
         leading: Text('leading'),
         title: Text(name),
-        subtitle: Text(category.toString()),
+        subtitle: Text(category.toFormattedString()),
         onTap: () {
           print('$name clicked');
           ScaffoldMessenger.of(context).showSnackBar(

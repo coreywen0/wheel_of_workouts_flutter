@@ -53,6 +53,7 @@ class WorkoutsProvider with ChangeNotifier {
   }
 
   void addWorkout(Workout workout) {
+    workout.id = DateTime.now().toIso8601String();
     _workouts.add(workout);
     notifyListeners();
   }
